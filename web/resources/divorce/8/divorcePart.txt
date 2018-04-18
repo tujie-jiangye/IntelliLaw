@@ -1,0 +1,5 @@
+一、能不能离婚部分
+由于你不同意与<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>离婚，所以<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>只能选择诉讼离婚。等到<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>去法院起诉离婚的请求被受理以后，这时法院判决离婚的标准是你们存在夫妻感情确已破裂的情形。
+综合你们夫妻双方的情形来看，<font color='#FF0000'>你们双方<description>(description1因感情不和分居长达两年的时间、你们双方结婚后没有在一起生活)</description><error>你(description2婚内家暴、你经常持续性的遗弃、你经常持续性的虐待、你长期吸毒、你经常赌博且屡教不改、你有重婚的情形、你长期与她人同居、你有身体缺陷或者存在疾病、你在婚内存在出轨的情形)</error></font>属于法定视为夫妻感情确已破裂的情形，对于此类情形法院判决你离婚的可能性非常大，但这个可能性需要对方提供足够的证据证明<font color='#FF0000'><error>(description2婚内家暴、你经常持续性的遗弃、你经常持续性的虐待、你长期吸毒、你经常赌博且屡教不改、你有重婚的情形、你长期与她人同居、你有身体缺陷或者存在疾病、你在婚内存在出轨的情形)</error></font>。（对方家暴次数证据越多你离婚的可能性越高）
+若是<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>没有足够的证据来证明以上事实，那么<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>离婚的诉讼请求将很难得到法院的支持。
+法院一但认定你存在以上行为，<rvSex>(if sex =man set Value 女方 else setValue 男方)</rvSex>就可以要求你赔偿精神损失费以及物质损失费，并且通过刑事自诉或刑事公诉让你承担相应的刑事责任。

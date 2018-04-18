@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JSONUtil">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil" recursive="false" />
+  </library>
+</component>

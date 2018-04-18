@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="IntelliLaw:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/IntelliLaw</output-path>
+    <root id="archive" name="IntelliLaw_war.war">
+      <element id="artifact" artifact-name="IntelliLaw:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.17.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/commons-beanutils-1.7.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/commons-collections.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/commons-lang.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/ezmorph.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/JSONUtil/json-lib-2.2.2-jdk15.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
