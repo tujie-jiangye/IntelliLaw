@@ -2,9 +2,8 @@ package org.csu.edu.servlet;
 
 import com.google.gson.Gson;
 import org.csu.edu.bean.DivorceClass;
-import org.csu.edu.bean.DivorceResponse;
+import org.csu.edu.bean.MarriageResponse;
 import org.csu.edu.service.CustodyService;
-import org.csu.edu.service.DivorceService;
 import org.csu.edu.util.MStrUtil;
 
 import javax.servlet.ServletException;
@@ -63,7 +62,7 @@ public class CustodyServlet extends HttpServlet {
         String dirRoot = MStrUtil.concatPath(servletRoot, type, classIndex);            //得到这一小类的根目录
 
         CustodyService cSerivce = new CustodyService(dirRoot, dClass);
-        DivorceResponse dResponse = cSerivce.getDVResponse(n);
+        MarriageResponse dResponse = cSerivce.getDVResponse(n);
 
         Gson tgson = new Gson();
         String reStr = tgson.toJson(dResponse);

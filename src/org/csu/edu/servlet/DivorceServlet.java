@@ -2,7 +2,7 @@ package org.csu.edu.servlet;
 
 import com.google.gson.Gson;
 import org.csu.edu.bean.DivorceClass;
-import org.csu.edu.bean.DivorceResponse;
+import org.csu.edu.bean.MarriageResponse;
 import org.csu.edu.service.DivorceService;
 import org.csu.edu.util.MStrUtil;
 
@@ -62,7 +62,7 @@ public class DivorceServlet extends HttpServlet {
         String dirRoot = MStrUtil.concatPath(servletRoot, type, classIndex);            //得到具体小类的根目录
 
         DivorceService dService = new DivorceService(dirRoot, dClass);
-        DivorceResponse dResponse = dService.getDVResponse(n);
+        MarriageResponse dResponse = dService.getDVResponse(n);
 
         //以json形式返回DivorceResponse对象
 //        JSONObject reObj = JSONObject.fromObject(dResponse);

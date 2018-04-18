@@ -12,7 +12,8 @@
   </head>
   <body>
   $END$
-  <a href="divorce">测试</a><<br>
+  <a href="divorce">测试</a><br>
   <a href="custody">测试抚养权</a>
+  <<a href="alimony">测试抚养费</a>
   </body>
 </html>

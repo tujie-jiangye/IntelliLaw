@@ -6,8 +6,8 @@ import org.csu.edu.util.MStrUtil;
 
 import java.io.File;
 
-public class CustodyZero extends MarriageDao {
-    public CustodyZero(String dirRoot, DivorceClass dClass) {
+public class Custody extends MarriageDao {
+    public Custody(String dirRoot, DivorceClass dClass) {
         super(dirRoot, dClass);
         String childPath = MStrUtil.concatPath(dirRoot, "childPart.txt");
         this.mPaths.setMarriagePath(childPath);

@@ -1,7 +1,7 @@
 package org.csu.edu.dao;
 
 import org.csu.edu.bean.DivorceClass;
-import org.csu.edu.bean.DivorceResponse;
+import org.csu.edu.bean.MarriageResponse;
 import org.csu.edu.bean.MPaths;
 import org.csu.edu.util.MFileUtil;
 
@@ -89,8 +89,8 @@ public class MarriageDao {
     }
 
     //定义一个外观，统一调用
-    public DivorceResponse getDVResponse(int n){
-        return new DivorceResponse(
+    public MarriageResponse getDVResponse(int n){
+        return new MarriageResponse(
                 getChance(),
                 getHeader(),
                 getMarriagePart(),

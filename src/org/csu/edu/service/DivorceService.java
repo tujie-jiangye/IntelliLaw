@@ -1,7 +1,7 @@
 package org.csu.edu.service;
 
 import org.csu.edu.bean.DivorceClass;
-import org.csu.edu.bean.DivorceResponse;
+import org.csu.edu.bean.MarriageResponse;
 import org.csu.edu.dao.MarriageDao;
 import org.csu.edu.dao.sub.divorce.*;
 
@@ -44,7 +44,7 @@ public class DivorceService {
         }
     }
 
-    public DivorceResponse getDVResponse(int n){
+    public MarriageResponse getDVResponse(int n){
         return marriageDao.getDVResponse(n);
     }
 }

@@ -1,6 +1,6 @@
 package org.csu.edu.bean;
 
-public class DivorceResponse {
+public class MarriageResponse {
     private String chance;
     private String header;
     private String divorcePath;
@@ -11,8 +11,8 @@ public class DivorceResponse {
     private String relatedRaw;
     private String[] cases;
 
-    public DivorceResponse(String chance, String header, String divorcePath, String mtlPrepare, String legalCost,
-                           String indictment, String action, String[] cases, String relatedRaw){
+    public MarriageResponse(String chance, String header, String divorcePath, String mtlPrepare, String legalCost,
+                            String indictment, String action, String[] cases, String relatedRaw){
         this.chance = chance;
         this.header = header;
         this.divorcePath = divorcePath;
@@ -24,7 +24,7 @@ public class DivorceResponse {
         this.relatedRaw = relatedRaw;
     }
 
-    public DivorceResponse(){}
+    public MarriageResponse(){}
 
     public String getChance() {
         return chance;

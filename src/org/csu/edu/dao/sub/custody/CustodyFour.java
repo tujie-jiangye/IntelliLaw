@@ -4,7 +4,7 @@ import org.csu.edu.bean.DivorceClass;
 
 import java.io.File;
 
-public class CustodyFour extends CustodyZero {
+public class CustodyFour extends Custody {
     public CustodyFour(String dirRoot, DivorceClass dClass) {
         super(dirRoot, dClass);
     }

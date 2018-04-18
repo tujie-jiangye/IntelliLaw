@@ -1,7 +1,7 @@
 package org.csu.edu.service;
 
 import org.csu.edu.bean.DivorceClass;
-import org.csu.edu.bean.DivorceResponse;
+import org.csu.edu.bean.MarriageResponse;
 import org.csu.edu.dao.MarriageDao;
 import org.csu.edu.dao.sub.custody.*;
 
@@ -11,7 +11,7 @@ public class CustodyService {
         int classIndex = dClass.getId();
         switch (classIndex){
             case 0:
-                marriageDao = new CustodyZero(dirRoot, dClass);
+                marriageDao = new Custody(dirRoot, dClass);
                 break;
             case 1:
                 marriageDao = new CustodyOne(dirRoot, dClass);
@@ -38,12 +38,12 @@ public class CustodyService {
                 marriageDao = new CustodyEight(dirRoot, dClass);
                 break;
             default:
-                marriageDao = new CustodyZero(dirRoot, dClass);
+                marriageDao = new Custody(dirRoot, dClass);
                 break;
         }
     }
 
-    public DivorceResponse getDVResponse(int n){
+    public MarriageResponse getDVResponse(int n){
         return marriageDao.getDVResponse(n);
     }
 }
