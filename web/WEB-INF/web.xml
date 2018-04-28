@@ -6,8 +6,8 @@
 
 
     <!-- 指定监听器加载的log4j配置文件 -->
-    <context-param>
-        <param-name>log4j</param-name>
-        <param-value>classpath:log4j.properties</param-value>
-    </context-param>
+    <!--<context-param>-->
+        <!--<param-name>log4j</param-name>-->
+        <!--<param-value>classpath:log4j.properties</param-value>-->
+    <!--</context-param>-->
 </web-app>
