@@ -1,3 +1,2 @@
-一、能不能离婚部分
-根据你所填写的资料信息显示，你属于现役非文职军人且不同意离婚，而你们又<font color='#FF0000'>不存在</font>法定视为夫妻感情确已破裂的情形，所以<rvSex>(if(sex==man) setValue 女方 else setValue 男方)</rvSex>离婚的诉讼请求将很难得到法院的支持。
+根据你所填写的资料信息显示，你属于现役非文职军人且不同意离婚，而你们又<font color='#FF0000'>不存在</font>法定视为夫妻感情确已破裂的情形，所以<rvSex>(if(sex==man) setValue 女方 else setValue 男方)</rvSex>离婚的诉讼请求将很难得到法院的支持。<br>
 除非<rvSex>(if(sex==man) setValue 女方 else setValue 男方)</rvSex>有确实证据证明你存在重大过错（与他人同居、家暴、吸毒、赌博、重婚、遗弃、虐待），若是没有证据无论<rvSex>(if(sex==man) setValue 女方 else setValue 男方)</rvSex>起诉多少次法院都很难判决你离婚。

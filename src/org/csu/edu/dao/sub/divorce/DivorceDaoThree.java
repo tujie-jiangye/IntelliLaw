@@ -14,7 +14,7 @@ public class DivorceDaoThree extends MarriageDao {
     public String getMarriagePart() {
         String divorceM = mFileUtil.readContent(new File(mPaths.getMarriagePath()));
         String replacement = dClass.getSex();
-        divorceM = divorceM.replaceAll("<sex>,*?</sex>", replacement);
+        divorceM = divorceM.replaceAll("<sex>.*?</sex>", replacement);
         return divorceM;
     }
 }

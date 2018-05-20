@@ -1,3 +1,16 @@
+/*
+** AlimonyServlet is located in the servlet layer,
+* the main function is to receive the client request
+* parameters about the support dispute, at the same time call
+* the lower module service layer handles the business logic,
+* and obtain relevant return results, and returned to the user.
+* The current implementation is mainly aimed at the Android end,
+* so the return result is json type data, and when the
+* business is extended to the web, the return result is rendered by
+* the view parser rendering to complete the adaption of the web. In addition,
+* the AlimonyServlet does some error-handling, checking the error parameters
+* for passing and processing null values, and logging the related errors in the logs.
+*/
 package org.csu.edu.servlet;
 
 import com.google.gson.Gson;

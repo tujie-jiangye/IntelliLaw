@@ -23,12 +23,16 @@ public class MFileUtil {
         }else {
             System.out.println("dir does not exist");
         }
-        Vector<Integer> ints = MathUtil.getNRDNum(files.length, n);
-        int i = 0;
-        for (int index : ints){
-            String content = readContent(files[index]);
-            results[i++] = content;
+//        Vector<Integer> ints = MathUtil.getNRDNum(files.length, n);
+        int i = 0, index = 0;
+        while(i < n && i < files.length){
+            String content = readContent(files[i++]);
+            results[index++] = content;
         }
+//        for (int index : ints){
+//            String content = readContent(files[index]);
+//            results[i++] = content;
+//        }
         return  results;
     }
 

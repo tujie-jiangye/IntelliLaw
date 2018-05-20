@@ -1,3 +1,15 @@
+/*
+** DivorceService as a middleware server logic function,
+* which is used to deal with divorce dispute, as the service layer,
+* be invoked as a servlet to obtain the lower service interface upwards,
+* downwards, call specific divorce dao layer to tackle the problem of
+* specific logic here, speaking, reading and writing database and
+* read and write the file content. At the same time,
+* the DivorceService also selects different lower-level modules to
+* handle the business logic, depending on the servlet passing parameters.
+* Finally, the processing result is obtained from the lower module
+* and returned to the servlet layer, which is returned to the user by the servlet.
+ */
 package org.csu.edu.service;
 
 import org.csu.edu.bean.DivorceClass;

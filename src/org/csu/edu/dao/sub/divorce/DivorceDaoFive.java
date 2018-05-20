@@ -21,9 +21,11 @@ public class DivorceDaoFive extends MarriageDao {
          */
         String divorceM = mFileUtil.readContent(new File(mPaths.getMarriagePath()));
         String rvSexM = isMan() ? "女方" : "男方";
+        String sexM = isMan() ? "男方" : "女方";
         String replacementD = dClass.getDescription();
         String replacementE = dClass.getError();
         divorceM = divorceM.replaceAll("<rvSex>.*?</rvSex>", rvSexM);
+        divorceM = divorceM.replaceAll("<sex>.*?</sex>", sexM);
         divorceM = divorceM.replaceAll("<description>.*?</description>", replacementD);
         divorceM = divorceM.replaceAll("<error>.*?</error>", replacementE);
         return divorceM;
@@ -120,12 +122,12 @@ public class DivorceDaoFive extends MarriageDao {
                 //替换准备证据收集部分
                 if (matcher.find()){
                     String r = matcher.group(1);
-                    mtlPrepareM = mtlPrepareM.replaceFirst(tag, "\n" + r);
+                    mtlPrepareM = mtlPrepareM.replaceFirst(tag, "<br>" + r);
                 }
                 //替换诉前提醒部分
                 if(matcher.find()){
                     String r = matcher.group(1);
-                    mtlPrepareM = mtlPrepareM.replaceAll(tag, "\n" + r);
+                    mtlPrepareM = mtlPrepareM.replaceAll(tag, "<br>" + r);
                 }
             }else {
                 mtlPrepareM = mtlPrepareM.replaceAll(tag, "");

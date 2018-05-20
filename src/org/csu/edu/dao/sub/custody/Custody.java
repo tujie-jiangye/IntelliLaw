@@ -1,3 +1,14 @@
+/*
+** Custody as all processing subclasses of Custody dispute,
+* inherited by all disputes MarriageDao processing module,
+* and according to the particularity of Custody disputes,
+* modify the relevant part of the path, and the relevant part of the file name.
+* For the processing of the non-different parts, the method is
+* implemented by overloading related methods to achieve the difference
+* between the processing of the treatment and return the correct result.
+* In addition, according to the particularity of this kind of dispute,
+* the author adds another function to deal with this kind of problem in a special way.
+ */
 package org.csu.edu.dao.sub.custody;
 
 import org.csu.edu.bean.DivorceClass;
@@ -13,6 +24,9 @@ public class Custody extends MarriageDao {
         this.mPaths.setMarriagePath(childPath);
     }
 
+    /*
+    ** get the path of the major description of children
+     */
     public String getChild(){
         String chdPathM = mFileUtil.readContent(new File(this.mPaths.getMarriagePath()));
         String sexM = isMan() ? "男方" : "女方";

@@ -17,4 +17,12 @@ public class DivorceDaoFour extends MarriageDao {
         mtlPrepareM = mtlPrepareM.replaceAll("<rvSex>.*?</rvSex>", replacement);
         return mtlPrepareM;
     }
+
+    @Override
+    public String getMarriagePart() {
+        String divorceM = mFileUtil.readContent(new File(mPaths.getMarriagePath()));
+        String replacement = isMan() ? "男方" : "女方";
+        divorceM = divorceM.replaceAll("<sex>.*?</sex>", replacement);
+        return divorceM;
+    }
 }

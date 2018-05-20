@@ -1,3 +1,9 @@
+/*
+**The DivorceClass mainly encapsulates the request parameters
+* sent from the client and serves as the interface for passing parameters
+* between the modules. Support is mainly used for divorce alcohol crazy processing module,
+* including information of divorce dispute category, gender of consultant, and error of double counter.
+ */
 package org.csu.edu.bean;
 
 public class DivorceClass {

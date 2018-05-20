@@ -85,7 +85,7 @@ public class DivorceDaoEight extends MarriageDao {
                 //替换准备证据收集部分
                 if (matcher.find()){
                     String r = matcher.group(1);
-                    mtlPrepareM = mtlPrepareM.replaceAll(tag, "\n" + r);
+                    mtlPrepareM = mtlPrepareM.replaceAll(tag, "<br>" + r);
                 }
             }else {
                 mtlPrepareM = mtlPrepareM.replaceAll(tag, "");

@@ -1,3 +1,11 @@
+/*
+**AlimonyDaoOne used to handle specific support dispute,
+* inherit all support AlimonyDao dispute processing module,
+* and according to the particularity of the custody dispute,
+* for specific problems on special processing,
+* AlimonyDaoOne by overloading the relevant methods to implement
+* different from AlimonyDao processing, and returns the correct results
+ */
 package org.csu.edu.dao.sub.alimony;
 
 import org.csu.edu.bean.DivorceClass;

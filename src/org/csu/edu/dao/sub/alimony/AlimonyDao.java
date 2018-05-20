@@ -1,3 +1,11 @@
+/*
+**AlimonyDao as a subclass of dispute all processing support inheritance
+* in all disputes MarriageDao processing module, and according to the particularity
+* of custody disputes, modify the relevant part of the path, and the relevant part
+* of the file name. With respect to the processing of the different parts,
+* AlimonyDao returns the correct result by overloading the relevant methods
+* to distinguish it from the MarriageDao processing.
+ */
 package org.csu.edu.dao.sub.alimony;
 
 import org.csu.edu.bean.DivorceClass;

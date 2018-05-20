@@ -16,5 +16,6 @@
   <a href="custody">测试抚养权</a>
   <a href="alimony">测试抚养费</a>
   <a href="collection">测试共同财产</a>
+  <<a href="itntnMarriage">测试跨国婚姻</a>
   </body>
 </html>

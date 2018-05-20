@@ -21,7 +21,7 @@ public class CollectionDao extends MarriageDao {
     /*
     * 由于共同财产这一块在resource结构上有很大的不同，因此
     * 这里提供一些方法来获取相应部分的文件目录或者文件路径
-    * 由于结构上的相似，提供统一的方法获取庐江
+    * 由于结构上的相似，提供统一的方法获取路径
      */
 
     public String getConcretePath(int n, String type){
@@ -223,6 +223,38 @@ public class CollectionDao extends MarriageDao {
         return mulM;
     }
 
+    public double getTotalCollection(){
+        double ans = 0;
+        int[] belongs = this.cClass.getBelongs();
+        if (belongs[0] == 1){
+            for (int i = 0; i < this.cClass.getHouseNum(); i++){
+                ans += this.cClass.getHouseValue()[i];
+            }
+        }
+
+        if (belongs[1] == 1){
+            for (int i = 0; i < this.cClass.getCarNum(); i++){
+                ans += this.cClass.getCarValue()[i];
+            }
+        }
+
+        if (belongs[3] == 1){
+            for (int i = 0; i < this.cClass.getShopNum(); i++){
+                ans += this.cClass.getStroageValue()[i];
+            }
+        }
+
+        if (belongs[2] == 1){
+            ans += this.cClass.getAccount()[0] + this.cClass.getAccount()[1];
+        }
+
+        if (belongs[4] == 1){
+            ans += this.cClass.getFund()[0] + this.cClass.getFund()[1];
+        }
+
+        return ans;
+    }
+
     @Override
     public boolean isMan() {
         String MSex = cClass.getSex();
@@ -239,7 +271,17 @@ public class CollectionDao extends MarriageDao {
 
     @Override
     public String getLegalCosts() {
-        return null;
+        String costM = this.mFileUtil.readContent(new File(this.mPaths.getLegalCostPath()));
+        String replaceM;
+        double totalCost = getTotalCollection();
+        if (totalCost > 200000){
+            double cost = (totalCost - 200000) * 0.0005;
+            replaceM = cost + "元";
+        }else {
+            replaceM = "50元 — 300元";
+        }
+        costM = costM.replaceAll("<legalCost>.*?</legalCost>", replaceM);
+        return costM;
     }
 
     @Override
@@ -266,7 +308,7 @@ public class CollectionDao extends MarriageDao {
             cltM = cltM.replaceAll("<houseConcrete>.*?</houseConcrete>", houseM);
         }
 
-        if (blgs[1] == 1){                          //是否有存款需要处理
+        if (blgs[1] == 1){                          //是否有车子需要处理
             String carM = "";
             for (int i = 0; i < this.cClass.getCarNum(); i++){
                 carM += String.format("第%d辆车子<br>", i + 1);

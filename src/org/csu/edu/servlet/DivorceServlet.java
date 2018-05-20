@@ -28,7 +28,7 @@ public class DivorceServlet extends HttpServlet {
         DivorceClass dClass = null;
         //获取请求参数，并封装到DivorceClass中
         String divorceStr = request.getParameter("divorce");    //要修改为正确的键值
-//        String divorceStr = " {\"description\":\"\",\"error\":\"\",\"id\":0,\"sex\":\"男方\"}";
+//        String divorceStr = " {\"description\":\"\",\"error\":\"\",\"id\":2,\"sex\":\"男方\"}";
         this.getServletContext().log(divorceStr);
         try {
             dClass = mgson.fromJson(divorceStr, DivorceClass.class);
@@ -45,9 +45,9 @@ public class DivorceServlet extends HttpServlet {
 //        int classIndexM = Integer.valueOf(request.getParameter("index"));
 
 
-        //先构造一个假的DivorceClass
+//        //先构造一个假的DivorceClass
 //        DivorceClass dClass = new DivorceClass();
-//        dClass.setId(5);
+//        dClass.setId(1);
 //        dClass.setSex("男");                       //这个要确定为男方还是男
 //        String dcrt = "双方感情不和分居两年,没有在一起生活,监狱坐牢";
 //        String err = "对方有吸毒行为,对方有家暴行为";

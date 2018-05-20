@@ -1,3 +1,10 @@
+/*
+**The SupportClass mainly encapsulates the request parameters sent from
+* the client and serves as the interface for passing parameters between the modules.
+* Support is mainly used to Support the dispute processing module, including
+* the request information maintenance category, consulting, gender, income, number of children,
+* both sides pay lowest and highest pay and their bad behavior, etc.
+ */
 package org.csu.edu.bean;
 
 public class SupportClass {

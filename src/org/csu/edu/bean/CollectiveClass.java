@@ -1,3 +1,13 @@
+/*
+**The CollectiveClass mainly encapsulates the request parameters
+* sent from the client and serves as the interface for passing parameters
+* between the modules. Support is mainly used for common property processing module,
+* containing all the common property of the relevant information, including gender,
+ * both fault, jointly owned consulting party the quantity, value, the investment
+ * proportion of the house, the quantity, value, the investment proportion of the car,
+  * the account balance, the value of the warehouse, the male money, cooperative enterprises,
+  * securities, insurance and other information.
+ */
 package org.csu.edu.bean;
 
 public class CollectiveClass {

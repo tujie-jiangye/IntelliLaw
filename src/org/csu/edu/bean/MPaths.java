@@ -1,3 +1,13 @@
+/*
+**MPaths mainly encapsulates the path of the relevant information
+ *  returned by the server to the client. The information represented
+  *  by these paths represents a complete set of legal advice and guidance.
+  *  MPaths all information as the path of the interface, contains
+  *  the winning probability information path, the path of header information,
+  *  marital disputes overview information, the path of preparation material information,
+  *  legal cost information, the path of judgment template, action recommendations,
+  *  the path of relevant laws and similar case information.
+ */
 package org.csu.edu.bean;
 
 import org.csu.edu.util.MStrUtil;

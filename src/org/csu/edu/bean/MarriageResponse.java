@@ -1,3 +1,11 @@
+/*
+**The MarriageResponse encapsulates all the information that
+* the server sends back to the client, which represents a complete
+* set of legal advice. MarriageResponse as all category information return interface,
+* contains the winning probability information, header information,
+* marital disputes overview information, prepare the material information, legal costs,
+* judgments templates, proposals for action information, laws, and similar cases.
+ */
 package org.csu.edu.bean;
 
 public class MarriageResponse {
